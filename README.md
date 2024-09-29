@@ -172,11 +172,12 @@ Notice that the further right of the horizontal axis (x axis) you go, the vertic
 ```js
 function allCombos(list){
 	var results = [];
-	for (var i = 0; i < results.length; i++){
-		for (var j = 0; j < results.length; j++){
-			results.push([i, j]);
+	for (var i = 0; i < list.length; i++){
+		for (var j = 0; j < list.length; j++){
+			results.push([ list[i] , list[j] ]);
 		}
 	}
+	return results;
 }
 ```
 
